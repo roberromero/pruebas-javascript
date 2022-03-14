@@ -1,4 +1,4 @@
-/* ROCK, PAPER, SCISSORS GAME*/
+/* ROCK, PAPER, SCISSORS GAME  (there are some arrow functions) */
 
 
 //Function proves that "rock", "paper" or "scissors" is introduced
