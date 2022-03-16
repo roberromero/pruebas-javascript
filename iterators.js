@@ -2,6 +2,9 @@
 .forEach()
 
 .filter()
+
+.findIndex()
+
 */
 
 
@@ -37,3 +40,38 @@ console.log(numPeque);
 const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
 const longFavoriteWords = favoriteWords.filter(
 palabra => palabra.length > 7);
+
+//.findIndex()
+
+const animales = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+const foundAnimal= animales.findIndex(animal=> animal=== 'elephant');
+console.log(foundAnimal);
+
+const startsWithS = animals.findIndex(animal =>
+animal.charAt(0)=== 's');
+console.log(startsWithS);
+
+//.reduce()
+
+const newNumbers = [1, 3, 5, 7];
+const newSum = newNumbers.reduce(function(accumulator,
+currentValue){
+  console.log('The value of accumulator: ', accumulator);
+  console.log('The value of currentValue: ', currentValue);
+  return accumulator + currentValue;
+},10//Añadimos un segundo argumento
+);
+
+console.log(newSum);
+
+// .some() .filter .every()
+
+const words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
+
+console.log(words.some(word => {
+  return word.length < 6;
+}));
+
+const interestingWords = words.filter((word) => {return word.length > 5});
+
+console.log(interestingWords.every((word) => {return word.length > 5}));
