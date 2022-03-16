@@ -55,3 +55,5 @@ team.addGame('Tenerife', 23, 11);
 team.addGame('Osasuna', 45, 7);
 
 console.log(team.games);
+console.log("-----");//Para acceder a una posición concreta
+console.log(team.players[0].firstName);
